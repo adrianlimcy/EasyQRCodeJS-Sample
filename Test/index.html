@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Self test</title>
+    <script src="./easy.qrcode.js"></script>
+  </head>
+  <body>
+    <div id='qrcode'>
+
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "https://www.ricoh.sg",
+      logo: "./ricoh.png",
+      logoWidth: 100,
+      logoHeight: 50,
+      logoBackgroundColor: "#ffffff",
+      logoBackgoundColorTransparent: false,
+      title: "test code",
+      titleFont: "bold 16px Arial",
+      titleColor: "red",
+      titleBackgroundColor: "#ffffff",
+      titleHeight: 0,
+      titleTop: 30,
+
+      subTitle: "This is subtitle",
+      subTitleFont: "14px Arial",
+      subTitleColor: "yellow",
+      subTitleTop: 0
+
+    });
+
+</script>
+
+<!-- https://www.cssscript.com/qr-code-generator-logo-title/ -->
